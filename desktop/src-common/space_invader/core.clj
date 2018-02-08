@@ -86,10 +86,7 @@
            (fn [screen entities]
              (height! screen 300)))
 
-;(set-game-screen! main-screen score-screen)
-
 (defgame space-invader-game
          :on-create
          (fn [this]
-           (set-screen! this main-screen)))
-
+           (set-screen! this main-screen score-screen)))
